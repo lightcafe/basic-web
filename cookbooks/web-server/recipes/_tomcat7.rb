@@ -43,6 +43,14 @@ end
     action :create
   end
 
+  template "/usr/share/#{t}/conf/server.xml" do
+    source "usr/share/#{t}/conf/server.xml.erb"
+    owner "root"
+    group "tomcat"
+    mode  0664
+    action :create
+  end
+
   directory "/usr/share/#{t}" do
     owner "root"
     group "tomcat"
