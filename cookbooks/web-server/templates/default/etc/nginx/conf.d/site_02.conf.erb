@@ -19,7 +19,8 @@ server {
     proxy_max_temp_file_size              0;
 
     location / {
-        root   site02_html
+        root   /usr/share/nginx/html;
+        # root   site02_html;
         index  index.html;
         try_files $uri @webapp;
     }
