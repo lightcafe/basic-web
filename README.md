@@ -36,3 +36,5 @@ $ knife cookbook create batch-server -o site-cookbooks
 - nginx + tomcat を構成する
 
 ## 3. 動作確認する
+
+2024/09/20.
